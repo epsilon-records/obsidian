@@ -6,7 +6,7 @@ Part of **[Epsilon Audio](https://github.com/natehouk/epsilon-plugins)**, a fami
 
 ![Obsidian](screenshot.png)
 
-Obsidian is a polyphonic synthesizer with four oscillators, four filters, a modulation system and an arpeggiator. It was written from scratch; no third-party code, presets or artwork are included.
+Obsidian is a polyphonic synthesizer with four oscillators, four filters, a modulation system and an arpeggiator. It was written from scratch: the DSP, interface and presets are original work, and third-party components (such as the DPF framework) are listed under [License](#license).
 
 It is the third instrument in a family:
 - [Monolith](https://github.com/natehouk/monolith), a synth
