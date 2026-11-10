@@ -6,7 +6,7 @@ Part of **[Epsilon Audio](https://github.com/natehouk/epsilon-plugins)**, a fami
 
 ![Obsidian](screenshot.png)
 
-Obsidian is a clean-room design with the feature set of FabFilter Twin 3 (2023). Versions 1 and 2 followed the original Twin (2005); version 3 follows Twin 3. It was written from scratch, working only from FabFilter's public product pages, release announcements and contemporary reviews. No FabFilter code, binaries, presets, artwork or trademarks were used.
+Obsidian is a polyphonic synthesizer with four oscillators, four filters, a modulation system and an arpeggiator. It was written from scratch; no third-party code, presets or artwork are included.
 
 It is the third instrument in a family:
 - [Monolith](https://github.com/natehouk/monolith), a synth
@@ -95,27 +95,7 @@ xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/*/Obsidian*
 
 ![Help](screenshot-help.png)
 
-### Compared with FabFilter Twin 3
-
-| Twin 3 | Obsidian 3.0 |
-|---|---|
-| 4 oscillators: saw, square, triangle, sine, noise; pure variants | ✓ triangle, saw, square, sine, white and pink noise, band-limited |
-| Detune, scale, sync knob, phase sync, level/pan per oscillator | ✓ octave/semitone/fine, sync ratio ×1–×16, phase sync, level, pan, PW |
-| Ring modulation, analog drift | ✓ ring 1×2 and 3×4, drift |
-| Master tune, portamento | ✓ tune, transpose, glide (always or legato) |
-| 4 filters, 11 styles; LP/BP/HP/bell/shelves/notch; 6–48 dB; frequency pan | ✓ eleven original styles, all shapes and slopes, gain, pan |
-| Serial, parallel and per-oscillator filter routing; freq/peak offsets | ✓ |
-| HQ (oversampling) mode | ✓ 4× |
-| Reverb, delay, chorus, phaser/flanger, drive, compressor | ✓ |
-| Arpeggiator: order, octaves, rate/sync, groove, legato, latch, retrigger, lock, section presets | ✓ |
-| Up to 64 voices, unison, per-oscillator voice mode | ✓ |
-| XLFOs (step sequencer), EGs with curves, EFs, XY controllers, MIDI sources | ✓ 4 XLFOs, 2 EGs, 2 EFs (with transient mode), 2 XY pads, MIDI |
-| Drag-and-drop modulation with visual feedback, up to 100 slots | ✓ 100 slots plus Obsidian 2's 24, live rings, per-knob slot list |
-| MIDI Learn, undo/redo, A/B, help and interactive hints | ✓ |
-| Preset browser | ✓ categories, search, favourites, user presets |
-| Factory presets; loads earlier presets | 60, plus your own; loads Obsidian 1.x and 2.x projects and presets, sounding identical |
-| Resizable interface, full-screen mode | Freely resizable interface |
-| AAX, AudioSuite | Not supported (needs Avid's SDK and signing) |
+Not supported: AAX, AudioSuite.
 
 ## Build from source
 
@@ -182,7 +162,7 @@ New parameters are only ever appended, so saved sessions and automation keep wor
 
 ## Changelog
 
-- **3.1:** arpeggiator presets (as in Twin 3); the preset browser searches names and categories as you type, and keeps Favourites.
+- **3.1:** arpeggiator presets; the preset browser searches names and categories as you type, and keeps Favourites.
 - **3.0:** Four oscillators with sine, white and pink noise, a sync-ratio knob, ring modulation, drift, master tune and transpose; four filters with seven new styles, bell, shelf and notch shapes, 6 and 48 dB slopes, gain, per-oscillator routing, freq/peak offsets and an interactive display; 4× HQ mode; reverb, delay, chorus, phaser/flanger, drive and compressor; an arpeggiator; up to 64 voices, unison 8 and a per-oscillator voice mode; the Epsilon modulation system (4 XLFOs with step sequencers, 2 curved envelopes, 2 followers, 2 XY pads, MIDI sources, 100 slots, per-source presets); a new interface; 18 new factory presets. Sessions and presets from 1.x and 2.x load unchanged and sound identical.
 - **2.0:** A/B with copy, undo/redo, hover tips, a help window and a full manual (in every release zip), rim-grab turning on the large knobs. Sessions and automation from 1.x load unchanged.
 - **1.0:** First release.
@@ -190,5 +170,3 @@ New parameters are only ever appended, so saved sessions and automation keep wor
 ## License
 
 [MIT](LICENSE). Built with [DPF](https://github.com/DISTRHO/DPF) and its bundled NanoVG, which are under the ISC license. `plugins/Obsidian/ResizeHandle.hpp` comes from DPF's examples and keeps its ISC notice.
-
-"FabFilter" and "FabFilter Twin" are trademarks of FabFilter Software Instruments. Obsidian is not affiliated with or endorsed by FabFilter.
